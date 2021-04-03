@@ -5,9 +5,9 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface IArticleService {
-    Mono<Article> createArticle(Article article);
+    Mono<Article> createArticle(Article article, Integer userId);
 
-    Flux<Article> getAllArticles();
+    Flux<Article> getAllArticles(Integer userId);
 
     Mono<Article> findById(Integer articleId);
 

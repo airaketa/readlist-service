@@ -14,12 +14,11 @@ import java.time.Instant;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table("articles")
-public class ArticleSchema {
+@Table("read_lists")
+public class ReadListSchema {
     @Id
     private Integer id;
     private String title;
-    private String url;
     private Instant ts;
     @Column("user_id")
     private Integer userId;
